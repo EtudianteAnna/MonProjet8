@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
 	 <ProjectReference Include="..\AgendaApi\PatientApi.csproj" />
     <ProjectReference Include="C:\Users\A154NF\source\repos\MonProjet8\MonProjet8\PasserelleApi.csproj" />
     <ProjectReference Include="..\PraticiensApi\PraticiensApi.csproj" />
