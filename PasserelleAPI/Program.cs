@@ -1,4 +1,4 @@
-namespace PasserelleApi
+namespace PasserelleAPI
 {
     public class Program
     {

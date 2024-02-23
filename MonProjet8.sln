@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasserelleApi", "MonProjet8\PasserelleApi.csproj", "{78A39761-9450-4053-B84C-F35104A15B5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PraticiensApi", "PraticiensApi\PraticiensApi.csproj", "{F9771B29-8203-4DBE-8F80-DB905E1BFCD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PraticiensApi", "PraticiensApi\PraticiensApi.csproj", "{F9771B29-8203-4DBE-8F80-DB905E1BFCD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientApi", "AgendaApi\PatientApi.csproj", "{97AE6324-5D9C-4F7F-ADA1-5FF264B5C576}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientApi", "AgendaApi\PatientApi.csproj", "{97AE6324-5D9C-4F7F-ADA1-5FF264B5C576}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarmonieServicesP8", "HarmonieServicesP8\HarmonieServicesP8.csproj", "{BD679D71-470C-4BCC-AA83-56FFE86A10AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarmonieServicesP8", "HarmonieServicesP8\HarmonieServicesP8.csproj", "{BD679D71-470C-4BCC-AA83-56FFE86A10AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasserelleAPI", "PasserelleAPI\PasserelleAPI.csproj", "{24EBBD5C-9612-4E5C-BDE9-1A5391ED8E51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{78A39761-9450-4053-B84C-F35104A15B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{78A39761-9450-4053-B84C-F35104A15B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{78A39761-9450-4053-B84C-F35104A15B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{78A39761-9450-4053-B84C-F35104A15B5B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F9771B29-8203-4DBE-8F80-DB905E1BFCD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F9771B29-8203-4DBE-8F80-DB905E1BFCD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9771B29-8203-4DBE-8F80-DB905E1BFCD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{BD679D71-470C-4BCC-AA83-56FFE86A10AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD679D71-470C-4BCC-AA83-56FFE86A10AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD679D71-470C-4BCC-AA83-56FFE86A10AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24EBBD5C-9612-4E5C-BDE9-1A5391ED8E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24EBBD5C-9612-4E5C-BDE9-1A5391ED8E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24EBBD5C-9612-4E5C-BDE9-1A5391ED8E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24EBBD5C-9612-4E5C-BDE9-1A5391ED8E51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

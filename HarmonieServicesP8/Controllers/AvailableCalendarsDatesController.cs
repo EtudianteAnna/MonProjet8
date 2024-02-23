@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PatientApi.Models;
 
-namespace PatientApi.Controllers
+namespace HarmonieServicesP8.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/availabilities")]
     public class AvailableCalendarDatesController : ControllerBase
     {
         private static readonly List<AvailableCalendarDatesController> _availableDatesList = new();
@@ -12,6 +11,10 @@ namespace PatientApi.Controllers
         [HttpPost]
         public IActionResult CreateAvailableDate([FromBody] AvailableCalendarDatesController availableDate)
         {
+            if (availableDate == null)
+            {
+                return BadRequest("Date non disponible");
+            }
             _availableDatesList.Add(availableDate);
             return Ok();
         }

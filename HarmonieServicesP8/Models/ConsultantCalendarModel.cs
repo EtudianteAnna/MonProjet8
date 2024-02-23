@@ -1,5 +1,5 @@
-﻿namespace PatientApi.Models
-{ 
+﻿namespace HarmonieServicesP8.Models
+{
 
     public class ConsultantCalendarModel
     {

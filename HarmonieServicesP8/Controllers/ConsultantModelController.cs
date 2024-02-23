@@ -1,13 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using PatientApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using HarmonieServicesP8.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace PatientApi.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/patients")]
     public class ConsultantController : ControllerBase
     {
         private static readonly List<ConsultantModel> _consultants = new List<ConsultantModel>();

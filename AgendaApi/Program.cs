@@ -1,4 +1,4 @@
-namespace AgendaApi
+namespace PatientApi
 {
     public class Program
     {
