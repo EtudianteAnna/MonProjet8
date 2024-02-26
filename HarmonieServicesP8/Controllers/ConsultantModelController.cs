@@ -7,6 +7,7 @@ namespace PatientApi.Controllers
     [Route("api/patients")]
     public class ConsultantController : ControllerBase
     {
+       
         private static readonly List<ConsultantModel> _consultants = new List<ConsultantModel>();
 
         [HttpPost]

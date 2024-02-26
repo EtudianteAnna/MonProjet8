@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientApi", "AgendaApi\Pat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarmonieServicesP8", "HarmonieServicesP8\HarmonieServicesP8.csproj", "{BD679D71-470C-4BCC-AA83-56FFE86A10AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasserelleAPI", "PasserelleAPI\PasserelleAPI.csproj", "{24EBBD5C-9612-4E5C-BDE9-1A5391ED8E51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasserelleAPI", "PasserelleAPI\PasserelleAPI.csproj", "{24EBBD5C-9612-4E5C-BDE9-1A5391ED8E51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

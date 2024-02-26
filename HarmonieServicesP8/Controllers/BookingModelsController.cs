@@ -6,6 +6,7 @@ namespace HarmonieServicesP8.Controllers
     [Route("api/bookings")]
     public class BookingController : ControllerBase
     {
+       
         [HttpPost]
         public IActionResult CreateBooking([FromBody] BookingModel.Models.BookingModel booking)
         {

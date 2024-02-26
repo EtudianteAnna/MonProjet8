@@ -6,6 +6,7 @@ namespace HarmonieServicesP8.Controllers
     [Route("api/availabilities")]
     public class AvailableCalendarDatesController : ControllerBase
     {
+
         private static readonly List<AvailableCalendarDatesController> _availableDatesList = new();
 
         [HttpPost]
