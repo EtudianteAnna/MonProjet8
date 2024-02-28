@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using HarmonieServicesP8.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace HarmonieServicesP8.Controllers
 {
@@ -8,7 +9,7 @@ namespace HarmonieServicesP8.Controllers
     {
        
         [HttpPost]
-        public IActionResult CreateBooking([FromBody] BookingModel.Models.BookingModel booking)
+        public IActionResult CreateBooking([FromBody] BookingModel booking)
         {
             // Logique pour créer une réservation
             return Ok(); // Renvoyer une réponse 200 OK si la réservation est créée avec succès
@@ -22,7 +23,7 @@ namespace HarmonieServicesP8.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateBooking(int id, [FromBody] BookingModel.Models.BookingModel booking)
+        public IActionResult UpdateBooking(int id, [FromBody] BookingModel booking)
         {
             // Logique pour mettre à jour une réservation
             return Ok(); // Renvoyer une réponse 200 OK si la réservation est mise à jour avec succès

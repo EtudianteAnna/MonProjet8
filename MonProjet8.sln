@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientApi", "AgendaApi\Pat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarmonieServicesP8", "HarmonieServicesP8\HarmonieServicesP8.csproj", "{BD679D71-470C-4BCC-AA83-56FFE86A10AA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasserelleAPI", "PasserelleAPI\PasserelleAPI.csproj", "{24EBBD5C-9612-4E5C-BDE9-1A5391ED8E51}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{BD679D71-470C-4BCC-AA83-56FFE86A10AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD679D71-470C-4BCC-AA83-56FFE86A10AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD679D71-470C-4BCC-AA83-56FFE86A10AA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{24EBBD5C-9612-4E5C-BDE9-1A5391ED8E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{24EBBD5C-9612-4E5C-BDE9-1A5391ED8E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{24EBBD5C-9612-4E5C-BDE9-1A5391ED8E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{24EBBD5C-9612-4E5C-BDE9-1A5391ED8E51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

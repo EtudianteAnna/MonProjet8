@@ -1,35 +1,55 @@
+using Ocelot.DependencyInjection;
+using Ocelot.Middleware;
+using FluentAssertions.Common;
+
 namespace PasserelleAPI
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args);
+            // Create the host builder
+            var hostBuilder = CreateHostBuilder(args );
 
-            // Add services to the container.
-
-            builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
-
-            var app = builder.Build();
-
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
-
-            app.UseHttpsRedirection();
-
-            app.UseAuthorization();
+            // Build and run the host
+            hostBuilder.Build().Run();
+        }
 
 
-            app.MapControllers();
+        public static IHostBuilder CreateHostBuilder(string[] args )
+        {
+            return Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    _ = webBuilder.ConfigureServices(services =>
+                    {
+                        services.AddControllers();
+                        services.AddEndpointsApiExplorer();
+                        services.AddSwaggerGen(c =>
+                        {
+                            c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "PasserelleAPI", Version = "v1" });
+                        });
+                    });
 
-            app.Run();
+                    webBuilder.Configure((hostingContext, app) =>
+                    {
+                        var env = hostingContext.HostingEnvironment;
+
+                        if (env.IsDevelopment())
+                        {
+                            app.UseSwagger();
+                            app.UseSwaggerUI(c =>
+                            {
+                                c.SwaggerEndpoint("/swagger/v1/swagger.json", "PasserelleAPI v1");
+                            });
+                        }
+                       
+                        app.UseHttpsRedirection();
+                        app.UseAuthorization();
+
+                                                
+                    });
+                });
         }
     }
 }

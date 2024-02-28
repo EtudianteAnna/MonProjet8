@@ -1,4 +1,4 @@
-﻿namespace BookingModel.Models
+﻿namespace HarmonieServicesP8.Models
 {
     public class BookingModel
 
