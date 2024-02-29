@@ -5,6 +5,7 @@ using PraticiensApi.PraticiensApiModels;
 namespace HarmonieServicesP8.Controllers
 {
     [ApiController]
+
     [Route("api/[controller]")]
     public class ConsultantController : ControllerBase
     {

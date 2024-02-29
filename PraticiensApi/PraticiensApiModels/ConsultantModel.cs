@@ -11,7 +11,6 @@ namespace HarmonieServicesP8.Models
         public string? Speciality { get; set; }
 
     }
-    
 
     public class ConsultantModelList
     {
